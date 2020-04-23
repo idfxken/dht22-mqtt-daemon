@@ -4,9 +4,9 @@ DHT22 MQTT is a simple daemon to query the local temperature sensor on a Raspber
 
 Before using it, it's dependencies have to be installed, most notably the Adafruit DHT Library. They're all inside the `requirements.txt`, and require **Python2**!
 
-```bash
-sudo apt-get install build-essential python-dev python-openssl
-sudo pip install -r requirements.txt
+```
+sudo apt-get install python-pip
+sudo pip install paho_mqtt Adafruit-Python-DHT configparser
 ```
 
 Make sure to run the daemon as root (required to access the Raspberry Pi's GPIO pins):
